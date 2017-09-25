@@ -8,7 +8,7 @@ function init() {
 
   var keyPressed = [];
 
-  const key = parseInt(e.detail || e.which); 
+  const key = parseInt(e.detail || e.which);
 
   if (key === code[i]) {
 
@@ -19,9 +19,9 @@ function init() {
     if (keyPressed.length === code.length) {
 
       alert('You did it!')
-      
+
     }
-    
+
   }
-  
+
 }
