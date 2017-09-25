@@ -6,25 +6,22 @@ let index = 0;
 
 function init() {
 
-  var key = [];
+  var keyPressed = [];
 
-  function onKeyDownHandler(e) {
+  const key = parseInt(e.detail || e.which); 
 
-    const key = parseInt(e.detail || e.which);
+  if (key === code[i]) {
 
-    if (key.length === code.length) {
+    keyPressed.push(key);
 
-      key.shift()
+    index++;
 
-      if (key.toString() == code.toString()) {
+    if (keyPressed.length === code.length) {
 
-        alert("You did it!")
-
-      }
-
-
+      alert('You did it!')
+      
     }
-
+    
   }
-
+  
 }
