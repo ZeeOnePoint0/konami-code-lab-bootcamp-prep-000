@@ -5,9 +5,9 @@ let index = 0;
 
 
 function init() {
-  
+
   const key = [];
-  
+
   function onKeyDownHandler(e) {
 
     const key = parseInt(e.detail || e.which);
@@ -19,11 +19,11 @@ function init() {
       if (key.toString() == code.toString()) {
 
         alert("You did it!")
-        
-      }
-      
 
-    } 
+      }
+
+
+    }
 
   }
 
