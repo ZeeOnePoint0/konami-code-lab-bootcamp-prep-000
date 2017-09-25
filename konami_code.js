@@ -16,7 +16,7 @@ function init() {
 
     index++;
 
-    if (keyPressed.length === code.length) {
+    if (index === code.length) {
 
       alert('You did it!')
 
