@@ -5,24 +5,25 @@ let index = 0;
 
 
 function init() {
-
+  
+  const key = [];
+  
   function onKeyDownHandler(e) {
 
     const key = parseInt(e.detail || e.which);
 
-    if (key === code[i]) {
+    if (key.length === code.length) {
 
-      index++
+      key.shift()
 
-      if (index === code.length) {
+      if (key.toString() == code.toString()) {
 
-        alert("You did it!");
-
-        index = 0;
-
+        alert("You did it!")
+        
       }
+      
 
-    } else {index = 0;}
+    } 
 
   }
 
