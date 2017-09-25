@@ -12,13 +12,13 @@ function init() {
 
   if (key === code[i]) {
 
-    keyPressed.push(key);
-
     index++;
 
     if (index === code.length) {
 
-      alert('You did it!')
+      alert('You did it!');
+
+      index = 0;
 
     }
 
