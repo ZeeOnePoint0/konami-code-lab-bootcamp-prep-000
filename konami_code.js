@@ -1,27 +1,25 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-let index = 0;
-
-
-
 function init() {
 
-  var keyPressed = [];
+  let index = 0;
 
-  const key = parseInt(e.detail || e.which);
+  document.addEventListener('keydown', function(e) {
 
-  if (key === code[i]) {
+    const key = parseInt(e.detail || e.which);
 
-    index++;
+    if (key === code[index]) {
 
-    if (index === code.length) {
+      index++;
 
-      alert('You did it!');
+      if (index === code.length) {
+        alert("You did it!");
 
-      index = 0;
-
-    } else {index = 0}
-
-  }
+        index = 0;
+      }
+    } else {index = 0;}
+    
+  }, false);
+  
 
 }
